@@ -1,4 +1,5 @@
 name: 🔧 리팩토링 제안
+title: "🔧 리팩토링 제안: "
 description: 구조 개선이나 코드 정리를 제안하고 싶어요!
 labels: [refactor]
 body:
