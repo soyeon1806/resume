@@ -7,7 +7,7 @@ body:
     id: summary
     attributes:
       label: 어떤 기능인가요?
-      placeholder: 예: 다크 모드 토글 기능 추가
+      placeholder: 예) 다크 모드 토글 기능 추가
     validations:
       required: true
 
