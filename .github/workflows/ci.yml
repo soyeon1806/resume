@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ main, dev ]
+    branches: [ master, dev ]
   pull_request:
-    branches: [ main, dev ]
+    branches: [ master, dev ]
 
 jobs:
   build:
@@ -25,5 +25,5 @@ jobs:
       - name: Run build
         run: npm run build
 
-      - name: Run lint (선택사항)
+      - name: Run lint
         run: npm run lint
