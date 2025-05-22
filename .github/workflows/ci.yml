@@ -26,4 +26,6 @@ jobs:
         run: npm run build
 
       - name: Run Prettier check
-        run: npx prettier --check .
+        run: |
+          echo "🔍 Checking code format with Prettier..."
+          npx prettier --check .
