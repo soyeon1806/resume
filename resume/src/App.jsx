@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import LoginPage from '@/pages/login/LoginPage'; // 네가 만들었던 로그인
+import LoginPage from '@/pages/login/LoginPage';
 import MainPage from '@/pages/main/MainPage';
 import React from 'react';
 
