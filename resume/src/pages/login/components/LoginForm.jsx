@@ -1,7 +1,18 @@
 import React from 'react';
 import profileImg from '@/assets/profile-img.png';
 
-const LoginForm = () => {
+const LoginForm = ({ setIsLoading }) => {
+    const handleLogin = () => {
+        // 1. 로딩 시작
+        setIsLoading(true);
+
+        // 2. 실제 로그인 처리를 흉내내기 위한 딜레이
+        setTimeout(() => {
+            // 예: 로그인 성공 → 메인 페이지 이동
+            window.location.href = '/main'; // 필요에 따라 라우팅 변경
+        }, 2000);
+    };
+
     return (
         <div
             style={{
@@ -50,6 +61,7 @@ const LoginForm = () => {
                 }}
             />
             <button
+                onClick={handleLogin}
                 style={{
                     width: '80%',
                     padding: '0.8rem',

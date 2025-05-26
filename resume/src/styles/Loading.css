@@ -1,0 +1,39 @@
+.loading-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+}
+
+.letters {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+
+.letter {
+    transition:
+        transform 0.3s ease-in-out,
+        color 0.3s;
+}
+
+.letter.active {
+    transform: scale(1.4);
+    color: #f06292;
+}
+
+.dot {
+    position: absolute;
+    top: -2rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f06292;
+    transition: left 0.3s ease-in-out;
+}
