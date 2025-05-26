@@ -40,7 +40,7 @@ const MainPage = () => {
                     margin: '0 auto',
                     borderRadius: '16px',
                     overflow: 'hidden',
-                    minHeight: '70vh',
+                    minHeight: '85vh',
                 }}
             >
                 <Navbar />
