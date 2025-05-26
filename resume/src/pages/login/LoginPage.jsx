@@ -1,10 +1,14 @@
 import '@/index.css';
 
+import React, { useState } from 'react';
+
+import LoadingAnimation from '@/pages/main/components/Loading';
 import LoginForm from './components/LoginForm';
-import React from 'react';
 import backgroundImg from '@/assets/background-img.png';
 
 const LoginPage = () => {
+    const [isLoading, setIsLoading] = useState(false);
+
     return (
         <div
             className="login-page"
@@ -18,7 +22,7 @@ const LoginPage = () => {
                 alignItems: 'center',
             }}
         >
-            <LoginForm />
+            {isLoading ? <LoadingAnimation /> : <LoginForm setIsLoading={setIsLoading} />}
         </div>
     );
 };
