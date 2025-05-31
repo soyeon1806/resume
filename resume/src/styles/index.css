@@ -1,10 +1,40 @@
+/* 
+    전체 웹 페이지의 기본 스타일 설정
+    body 태그는 페이지에서 가장 바깥 영역으로,
+    모든 콘텐츠의 배경이 되는 영역임
+*/
 body {
+    /*
+        'Gowun Dodum' 폰트를 적용하고,
+        대체 폰트로는 sans-serif로 함
+    */
     font-family: 'Gowun Dodum', sans-serif;
+
+    /*
+        body의 기본 여백을 0으로 정함
+    */
     margin: 0;
+
+    /*
+        전체 배경색은 연한 분홍색 계열로 정함
+    */
     background-color: #fceef2;
 }
 
+
+/*
+    input 요소에 포커스 (선택)되었을 때의 스타일을 지정함
+    -> 로그인 창 등 사용자 입력을 받는 필드에 적용됨
+*/
 input:focus {
+    /*
+        기본 아웃라인을 제거함
+    */
     outline: none;
+
+    /*
+        focus 상태일 때 테두리를 분홍색으로 변경함
+        -> 사용자가 클릭했음을 시각적으로 알려주기 위해서 설정함
+    */
     border: 1px solid #f19cbb;
 }
