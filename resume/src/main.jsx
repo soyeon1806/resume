@@ -11,7 +11,7 @@
 // 4️⃣ React 18부터 도입된 createRoot API를 import 함
 // 이 API를 통해 React가 실제로 HTML DOM에 컴포넌트를 렌더링할 수 있도록 연결함
 
-import './index.css';
+import '@/styles/index.css';
 
 import App from '@/App.jsx';
 import { StrictMode } from 'react';
